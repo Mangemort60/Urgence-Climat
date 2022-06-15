@@ -16,3 +16,11 @@ font-family: 'Gloria Hallelujah', cursive;*/
 body {
     margin: 0px;
 }
+
+.logo img {
+    display: none;
+}
+
+h1 {
+    color: white;
+}
