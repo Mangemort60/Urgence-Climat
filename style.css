@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Nunito&family=Poppins&display=swap');
+/* font-family: 'Nunito', sans-serif;
+font-family: 'Poppins', sans-serif; 
+font-family: 'Gloria Hallelujah', cursive;*/
+
+:root {
+    --FontWebsiteName: 'Gloria Hallelujah', cursive;;
+
+
+}
+
+
+
+body {
+    margin: 0px;
+}
