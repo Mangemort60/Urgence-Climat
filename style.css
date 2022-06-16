@@ -54,6 +54,7 @@ header a {
 
 
 /* main */
+
 /* Acceuil */
 
 .home {
@@ -79,7 +80,7 @@ header a {
     margin-bottom: 40px;
 }
 
-/* Section Actualités */
+/* Section Actualités et Evènements*/
 
 .actu h2 {
     text-align: center;
