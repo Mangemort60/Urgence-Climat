@@ -50,6 +50,7 @@ header a {
 
 
 /* main */
+/* Acceuil */
 
 .home {
     width: 100vw;
@@ -72,4 +73,28 @@ header a {
     color: rgb(255, 255, 255);
     font-weight: 900;
     margin-bottom: 40px;
+}
+
+/* Section Actualités */
+
+.actu h2 {
+    text-align: center;
+    margin: 4rem auto;
+    font-weight: bold;
+}
+
+.actu h3 {
+    text-decoration: underline;
+}
+.actu h3:hover {
+    cursor: pointer;
+}
+
+.card.actu {
+    padding: 1rem;
+    border: none;
+}
+
+.actu img {
+    margin-bottom: 1rem;
 }
