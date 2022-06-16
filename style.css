@@ -86,8 +86,13 @@ header a {
 .actu h3 {
     text-decoration: underline;
 }
+
 .actu h3:hover {
     cursor: pointer;
+}
+
+.actu p {
+    color: gray;
 }
 
 .card.actu {
