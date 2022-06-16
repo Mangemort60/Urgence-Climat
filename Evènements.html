@@ -2,60 +2,84 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Il n'y a plus de temps à perdre, rejoignez Urgence Climat !">
-  <!-- Ajout d'un Favicon -->
-  <link rel="icon" type="image/x-icon" href="/media/Favicon.png">
-  <!-- Ajout de CDN Bootstrap que j'utiliserai en partie  -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <title>Urgence Climat</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Il n'y a plus de temps à perdre, rejoignez Urgence Climat !">
+    <!-- Ajout d'un Favicon -->
+    <link rel="icon" type="image/x-icon" href="/media/Favicon.png">
+    <!-- Ajout de CDN Bootstrap que j'utiliserai en partie  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Urgence Climat</title>
 </head>
 
 <body>
-  <main>
-    <div class="home">
-      <p>Il n'y a plus de temps à perdre .</p>
-      <button type="button" class="btn btn-primary btn-lg align-self-end ">J'agis</button>
+    <header>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-white p-4">
+                <ul>
+                    <li><a href="">Actualités</a></li>
+                    <li><a href="">Adhésion</a></li>
+                    <li><a href="">Evenements</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <button type="button" class="btn btn-warning">Faire un don</button>
 
-    </div>
-    <section class="actu">
-      <h2>Actualités</h2>
-      <div class="card actu">
-        <img src="/media/Few-trees.png" alt="">
-        <h3>Déforestation : ce n’est pas seulement une question de carbone</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi numquam similique harum consectetur inventore
-          sequi in nesciunt cum ex explicabo.</p>
-        <button type="button" class="btn btn-primary btn-sm align-self-end ">En savoir plus</button>
+            </div>
+        </div>
+        <nav class="navbar navbar-light bg-white">
+            <div class="container-fluid">
+                <h1>Urgence Climat</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
 
-      </div>
-      <div class="card actu">
-        <img src="/media/Pollution.png" alt="">
-        <h3>La pollution de l’air vous enlève 2 ans de vie, plus que le tabagisme ou l’alcool</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi numquam similique harum consectetur inventore
-          sequi in nesciunt cum ex explicabo.</p>
-        <button type="button" class="btn btn-primary btn-sm align-self-end ">En savoir plus</button>
+    </header>
 
-      </div>
-      <div class="card actu">
-        <img src="/media/Manif.png" alt="">
-        <h3>Marche pour le climat : des dizaines de manifestations organisées dans toute la France</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi numquam similique harum consectetur inventore
-          sequi in nesciunt cum ex explicabo.</p>
-        <button type="button" class="btn btn-primary btn-sm align-self-end ">En savoir plus</button>
+    <main>
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Acceuil</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Evènements</li>
+            </ol>
+        </nav>
+        <section class="actu">
+            <h2>Evènements</h2>
+            <div class="card event">
+                <img src="/media/ONU.jpg" alt="">
+                <h3>Conférence de Charm el-Cheikh de 2022 (COP27)</h3>
+                <p>Conférence internationale de l'Organisation des Nations unies qui devrait se dérouler du 7 au 18 novembre 2022 à Charm el-Cheikh en bord de Mer rouge en Égypte</p>
+                <button type="button" class="btn btn-primary btn-sm align-self-end ">En savoir plus</button>
 
-      </div>
-    </section>
-  </main>
+            </div>
+            <div class="card event">
+                <img src="/media/Paris.jpg" alt="">
+                <h3>Le Forum International de la Météo et du Climat 2022 à Paris</h3>
+                <p>Le Forum International de la Météo et du Climat revient à Paris sur le parvis de l'Hôtel de Ville du 14 au 17 mai 2022. Ne manquez pas le rendez-vous incontournable sur l'éducation et la sensibilisation aux enjeux climatiques. </p>
+                <button type="button" class="btn btn-primary btn-sm align-self-end ">En savoir plus</button>
+
+            </div>
+            <div class="card event">
+                <img src="/media/Lookup.png" alt="">
+                <h3>Look Up ! Marche pour le climat : rendez-vous le 12 mars</h3>
+                <p>Le 12 mars, partout en France nous marcherons pour faire de 2022 l’année où la France a enfin pris le chemin d’un avenir juste et soutenable pour toutes et tous. Nous n’attendrons pas 5 ans de plus. Infos pratiques sur la Marche Climat.</p>
+                <button type="button" class="btn btn-primary btn-sm align-self-end ">En savoir plus</button>
+
+            </div>
+        </section>
+    </main>
 
 
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-  </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

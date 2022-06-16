@@ -28,6 +28,10 @@ body {
     display: none;
 }
 
+header {
+    margin-bottom: 1rem;
+}
+
 header h1 {
     color: green;
     font-family: var(--FontWebsiteName);
@@ -79,6 +83,7 @@ header a {
 
 .actu h2 {
     text-align: center;
+    font-size: 2rem;
     margin: 4rem auto;
     font-weight: bold;
 }
@@ -95,7 +100,7 @@ header a {
     color: gray;
 }
 
-.card.actu {
+.card {
     padding: 1rem;
     border: none;
 }
