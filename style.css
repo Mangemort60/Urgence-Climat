@@ -98,3 +98,21 @@ header a {
 .actu img {
     margin-bottom: 1rem;
 }
+
+/* Appel au dons */
+
+.donateBanner {
+    width: 100vw;
+    height: 50vh;
+    margin-top: 2rem;
+    background-image: url(/media/Rhino.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.521);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
