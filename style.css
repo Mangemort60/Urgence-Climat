@@ -14,33 +14,42 @@ font-family: 'Gloria Hallelujah', cursive;*/
     box-sizing: border-box;
 }
 
+/* CSS Mobile-first */
+
+
 body {
     margin: 0px;
     padding: 0px;
     font-family: var(--FontPrincipal);
+
 }
+
 
 /* Navbar */
-
-.logo img {
-    display: none;
-}
 
 header {
     margin-bottom: 1rem;
 }
 
-header .navbar-brand {
+
+.navbar-brand {
     color: green;
     font-family: var(--FontWebsiteName);
     font-weight: bold;
 }
 
+.logo {
+    display: none;
+}
 
+.breadcrumb {
+    margin-top: 4rem;
+}
 
 /* main */
 
 /* Acceuil */
+
 
 .home {
     width: 100vw;
@@ -123,14 +132,17 @@ header .navbar-brand {
     margin-bottom: 2rem;
 }
 
-.joinUs p,form {
+.joinUs p,
+form {
     padding: 2rem;
-    
+
 }
+
 .joinUs p {
     font-size: 2rem;
     font-weight: bold;
 }
+
 .joinUs p span {
     font-family: var(--FontWebsiteName);
     color: green;
@@ -167,3 +179,45 @@ footer {
 
 
 }
+
+/* CSS desktop */
+
+
+@media screen and (min-width: 992px) {
+
+    .logo {
+        display: initial;
+        width: 50px;
+        margin-right: 10px;
+    }
+    
+    .home {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(/media/Fire.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.411);
+        background-blend-mode: multiply;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    
+    }
+
+    .home p {
+        font-size: 6rem;
+        color: rgb(255, 255, 255);
+        font-weight: 900;
+        
+    }
+
+    .home .btn.btn-primary  {
+        width: 200px;
+        font-size: 2rem;
+    }
+}
+
+
