@@ -23,7 +23,7 @@
 
       <div class="container-fluid">
         <img src="/media/LogoPrincipal.png" class="logo" alt="logo Terre">
-        <a class="navbar-brand" href="#toHome">Urgence Climat </a>
+        <a class="navbar-brand" href="index.html">Urgence Climat </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -31,10 +31,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#actu">Actualités</a>
+              <a class="nav-link" href="/index.html#actu">Actualités</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="adhesion.html">Adhésion</a>
+              <a class="nav-link" href="#joinUsForm">Adhésion</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/Evènements.html">Evènements</a>
@@ -48,43 +48,53 @@
 
   </header>
   <main>
-    <div class="home">
-      <p>Il n'y a plus de temps à perdre .</p>
-      <button type="button" class="btn btn-primary btn-lg">J'agis</button>
-
-    </div>
-    <!-- Actualités -->
-    <h2 id="actu">Actualités</h2>
-    <section class="actu">
-      <div class="card actu Déforestation">
-        <img src="/media/Few-trees.png" alt="">
-        <h3>Déforestation : ce n’est pas seulement une question de carbone</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi numquam similique harum consectetur inventore
-          sequi in nesciunt cum ex explicabo.</p>
-        <button type="button" class="btn btn-primary btn-sm align-self-end ">En savoir plus</button>
-
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Adhésion</li>
+        </ol>
+      </nav>
+    <!-- formulaire d'Adhésion -->
+    <div class="wallImg"></div>
+    <div class="form">
+        <div class="joinUs">
+            <p id="joinUsForm">Rejoignez <span>Urgence Climat </span>, nous comptons sur vous !</p>
+          </div>
+    <form class="row g-3">
+      <div class="col-md-4">
+        <label for="Nom" class="form-label">Nom</label>
+        <input type="text" class="form-control" id="Nom" required>
       </div>
-      <div class="card actu pollution">
-        <img src="/media/Pollution.png" alt="">
-        <h3>La pollution de l’air vous enlève 2 ans de vie, plus que le tabagisme ou l’alcool</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi numquam similique harum consectetur inventore
-          sequi in nesciunt cum ex explicabo.</p>
-        <button type="button" class="btn btn-primary btn-sm align-self-end ">En savoir plus</button>
-
+      <div class="col-md-4">
+        <label for="Prénom" class="form-label">Prénom</label>
+        <input type="text" class="form-control" id="Prénom" required>
       </div>
-      <div class="card actu manifestations">
-        <img src="/media/Manif.png" alt="">
-        <h3>Marche pour le climat : des dizaines de manifestations organisées dans toute la France</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi numquam similique harum consectetur inventore
-          sequi in nesciunt cum ex explicabo.</p>
-        <button type="button" class="btn btn-primary btn-sm align-self-end ">En savoir plus</button>
-
+      <div class="col-md-6">
+        <label for="ville" class="form-label">Ville</label>
+        <input type="text" class="form-control" id="Ville" required>
       </div>
-    </section>
-    <div class="donateBanner">
-      <button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-heart fa-2xs fa-fw"></i> Faire un
-        don</button>
-    </div>
+      <div class="col-md-3">
+        <label for="codePostal" class="form-label">Code Postal</label>
+        <input type="text" class="form-control" id="CodePostal" required>
+      </div>
+      <div class="col-md-3 ">
+        <label for="mail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="conditions" required>
+          <label class="form-check-label" for="conditions">
+            j'accepte les termes et conditions
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Soumettre
+        </button>
+      </div>
+    </form>
+</div>
   </main>
   <!-- footer  -->
   <footer>
