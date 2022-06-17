@@ -136,3 +136,34 @@ header .navbar-brand {
     color: green;
 }
 
+/* footer */
+
+footer {
+    height: 50vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+
+}
+
+.attribution {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    height: auto;
+    margin-top: 100px;
+
+
+
+}
