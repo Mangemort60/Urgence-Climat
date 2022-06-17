@@ -8,8 +8,6 @@ font-family: 'Gloria Hallelujah', cursive;*/
 :root {
     --FontWebsiteName: 'Gloria Hallelujah', cursive;
     --FontPrincipal: 'Poppins', sans-serif;
-
-
 }
 
 * {
@@ -32,25 +30,12 @@ header {
     margin-bottom: 1rem;
 }
 
-header h1 {
+header .navbar-brand {
     color: green;
     font-family: var(--FontWebsiteName);
     font-weight: bold;
 }
 
-header ul {
-    padding: 0px;
-}
-
-header li {
-    list-style-type: none;
-    margin: 2px;
-}
-
-header a {
-    text-decoration: none;
-    color: black;
-}
 
 
 /* main */
@@ -68,7 +53,7 @@ header a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 0px 30px;
 
 }
@@ -127,3 +112,27 @@ header a {
     align-items: center;
 
 }
+
+/* Adhésion */
+
+.wallImg {
+    width: 100%;
+    height: 50vh;
+    background-image: url(/media/join.png);
+    background-size: cover;
+    margin-bottom: 2rem;
+}
+
+.joinUs p,form {
+    padding: 2rem;
+    
+}
+.joinUs p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.joinUs p span {
+    font-family: var(--FontWebsiteName);
+    color: green;
+}
+

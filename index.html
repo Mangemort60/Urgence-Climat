@@ -19,26 +19,28 @@
 
 <body>
   <header>
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="bg-white p-4">
-        <ul>
-          <li><a href="">Actualités</a></li>
-          <li><a href="">Adhésion</a></li>
-          <li><a href="/Evènements.html">Evènements</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-        <button type="button" class="btn btn-warning"><i class="fa-solid fa-heart fa-2xs"></i> Faire un don</button>
-
-      </div>
-    </div>
-    <nav class="navbar navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg bg-white">
       <div class="container-fluid">
-        <h1>Urgence Climat</h1>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-          aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">Urgence Climat </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Actualités</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#joinUsForm">Adhésion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Evènements.html">Evènements</a>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-warning"><i class="fa-solid fa-heart fa-2xs fa-fw"></i> Faire un
+            don</button>
+        </div>
       </div>
     </nav>
 
@@ -46,7 +48,7 @@
   <main>
     <div class="home">
       <p>Il n'y a plus de temps à perdre .</p>
-      <button type="button" class="btn btn-primary btn-lg align-self-end ">J'agis</button>
+      <button type="button" class="btn btn-primary btn-lg">J'agis</button>
 
     </div>
     <section class="actu">
@@ -77,8 +79,45 @@
       </div>
     </section>
     <div class="donateBanner">
-      <button type="button" class="btn btn-warning btn-lg">Faire un don</button>
+      <button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-heart fa-2xs fa-fw"></i> Faire un
+        don</button>
     </div>
+    <div class="joinUs">
+      <div class="wallImg"></div>
+      <p id="joinUsForm">Rejoignez <span>Urgence Climat </span>, nous comptons sur vous !</p>
+    </div>
+    <!-- formulaire d'Adhésion -->
+    <form class="row g-3">
+      <div class="col-md-4">
+        <label for="Nom" class="form-label">Nom</label>
+        <input type="text" class="form-control" id="Nom" required>
+      </div>
+      <div class="col-md-4">
+        <label for="Prénom" class="form-label">Prénom</label>
+        <input type="text" class="form-control" id="Prénom" required>
+      </div>
+      <div class="col-md-6">
+        <label for="ville" class="form-label">Ville</label>
+        <input type="text" class="form-control" id="Ville" required>
+      </div>
+      <div class="col-md-3">
+        <label for="codePostal" class="form-label">Code Postal</label>
+        <input type="text" class="form-control" id="CodePostal" required>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="conditions" required>
+          <label class="form-check-label" for="conditions">
+            j'accepte les termes et conditions
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Soumettre
+        </button>
+      </div>
+    </form>
+
   </main>
 
 
