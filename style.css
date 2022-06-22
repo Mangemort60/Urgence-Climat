@@ -119,6 +119,7 @@ main h2 {
 
 .actu img {
     margin-bottom: 1rem;
+    object-fit: cover;
 }
 
 /* Appel au dons */
