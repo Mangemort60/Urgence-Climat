@@ -227,7 +227,7 @@ footer {
     .home {
         width: 100vw;
         height: 100vh;
-        background-image: url(/media/secheresse.png);
+        background-image: url(/media/secheresse.webp);
         background-repeat: no-repeat;
         background-size: cover;
         background-color: rgba(0, 0, 0, 0.500);
